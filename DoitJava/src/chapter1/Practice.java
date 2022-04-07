@@ -8,24 +8,24 @@ public class Practice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¹®Á¦ ¹øÈ£¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.println("ë¬¸ì œ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		int problem = scan.nextInt();
 		if (problem == 1) {
 			float rate = 1100;
-			System.out.printf("¿øÈ­¸¦ ÀÔ·ÂÇÏ¼¼¿ä(´ÜÀ§ ¿ø)>>");
+			System.out.printf("ì›í™”ë¥¼ ì…ë ¥í•˜ì„¸ìš”(ë‹¨ìœ„ ì›)>>");
 			int money_won = scan.nextInt();
 			float money_dollor = money_won / rate;
-			System.out.println(money_won + "¿øÀº $" + money_dollor + "ÀÔ´Ï´Ù");
+			System.out.println(money_won + "ì›ì€ $" + money_dollor + "ì…ë‹ˆë‹¤");
 		} else if (problem == 2) {
-			System.out.printf("2ÀÚ¸®¼ö Á¤¼ö ÀÔ·Â >>");
+			System.out.printf("2ìë¦¬ìˆ˜ ì •ìˆ˜ ì…ë ¥ >>");
 			int number = scan.nextInt();
 			if (number / 10 == number % 10) {
-				System.out.println("yes! 10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ °°½À´Ï´Ù.");
+				System.out.println("yes! 10ì˜ ìë¦¬ì™€ 1ì˜ ìë¦¬ê°€ ê°™ìŠµë‹ˆë‹¤.");
 			} else {
-				System.out.println("no! 10ÀÇ ÀÚ¸®¿Í 1ÀÇ ÀÚ¸®°¡ ´Ù¸¨´Ï´Ù.");
+				System.out.println("no! 10ì˜ ìë¦¬ì™€ 1ì˜ ìë¦¬ê°€ ë‹¤ë¦…ë‹ˆë‹¤.");
 			}
 		} else if (problem == 3) {
-			System.out.printf("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä >>");
+			System.out.printf("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” >>");
 			int money = scan.nextInt();
 			int money_left = 0;
 			int money_50000, money_10000, money_1000, money_100, money_10, money_50, money_1;
@@ -43,7 +43,7 @@ public class Practice {
 				money_10 = money_left / 10;
 				money_left = money_left - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("¿À¸¸¿ø±Ç %d¸Å\n ¸¸¿ø±Ç %d¸Å\n Ãµ¿ø±Ç %d¸Å\n ¹é¿ø %d°³\n ¿À½Ê¿ø %d¸Å\n ½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_50000,
+				System.out.printf("ì˜¤ë§Œì›ê¶Œ %dë§¤\n ë§Œì›ê¶Œ %dë§¤\n ì²œì›ê¶Œ %dë§¤\n ë°±ì› %dê°œ\n ì˜¤ì‹­ì› %dë§¤\n ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_50000,
 						money_10000, money_1000, money_100, money_50, money_10, money_1);
 			} else if (money / 10000 > 0) {
 				money_10000 = money / 10000;
@@ -57,7 +57,7 @@ public class Practice {
 				money_10 = money_left / 10;
 				money_left = money_left - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("¸¸¿ø±Ç %d¸Å\n Ãµ¿ø±Ç %d¸Å\n ¹é¿ø %d°³\n ¿À½Ê¿ø %d¸Å\n ½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_10000, money_1000,
+				System.out.printf("ë§Œì›ê¶Œ %dë§¤\n ì²œì›ê¶Œ %dë§¤\n ë°±ì› %dê°œ\n ì˜¤ì‹­ì› %dë§¤\n ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_10000, money_1000,
 						money_100, money_50, money_10, money_1);
 			} else if (money / 1000 > 0) {
 				money_1000 = money / 1000;
@@ -69,7 +69,7 @@ public class Practice {
 				money_10 = money_left / 10;
 				money_left = money_left - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("Ãµ¿ø±Ç %d¸Å\n ¹é¿ø %d°³\n ¿À½Ê¿ø %d¸Å\n ½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_1000, money_100, money_50,
+				System.out.printf("ì²œì›ê¶Œ %dë§¤\n ë°±ì› %dê°œ\n ì˜¤ì‹­ì› %dë§¤\n ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_1000, money_100, money_50,
 						money_10, money_1);
 			} else if (money / 100 > 0) {
 				money_100 = money / 100;
@@ -79,7 +79,7 @@ public class Practice {
 				money_10 = money_left / 10;
 				money_left = money_left - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("¹é¿ø %d°³\n ¿À½Ê¿ø %d¸Å\n ½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_100, money_10, money_50, money_1);
+				System.out.printf("ë°±ì› %dê°œ\n ì˜¤ì‹­ì› %dë§¤\n ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_100, money_10, money_50, money_1);
 
 			} else if (money / 50 > 0) {
 				money_50 = money / 50;
@@ -87,18 +87,18 @@ public class Practice {
 				money_10 = money_left / 10;
 				money_left = money_left - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("¿À½Ê¿ø %d¸Å\n ½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_50, money_10, money_1);
+				System.out.printf("ì˜¤ì‹­ì› %dë§¤\n ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_50, money_10, money_1);
 
 			} else if (money / 10 > 0) {
 				money_10 = money / 10;
 				money_left = money - 10 * (money_10);
 				money_1 = money_left;
-				System.out.printf("½Ê¿ø %d°³\n ÀÏ¿ø %d°³\n", money_10, money_1);
+				System.out.printf("ì‹­ì› %dê°œ\n ì¼ì› %dê°œ\n", money_10, money_1);
 			} else {
-				System.out.printf("ÀÏ¿ø %d°³\n", money);
+				System.out.printf("ì¼ì› %dê°œ\n", money);
 			}
 		} else if (problem == 4) {
-			System.out.printf("Á¤¼ö 3°³ ÀÔ·Â >>");
+			System.out.printf("ì •ìˆ˜ 3ê°œ ì…ë ¥ >>");
 			int number1 = scan.nextInt();
 			int number2 = scan.nextInt();
 			int number3 = scan.nextInt();
@@ -136,7 +136,7 @@ public class Practice {
 		}
 
 		else if (problem == 5) {
-			System.out.printf("Á¤¼ö 3°³ ÀÔ·Â >>");
+			System.out.printf("ì •ìˆ˜ 3ê°œ ì…ë ¥ >>");
 			int number1 = scan.nextInt();
 			int number2 = scan.nextInt();
 			int number3 = scan.nextInt();
@@ -144,160 +144,160 @@ public class Practice {
 			if (number1 + number2 > number3) {
 				if (number1 + number3 > number2) {
 					if (number2 + number3 > number1) {
-						System.out.println("»ï°¢ÇüÀÌ µË´Ï´Ù.");
+						System.out.println("ì‚¼ê°í˜•ì´ ë©ë‹ˆë‹¤.");
 					} else {
-						System.out.println("»ï°¢ÇüÀÌ ¾Æ´Õ´Ï´Ù");
+						System.out.println("ì‚¼ê°í˜•ì´ ì•„ë‹™ë‹ˆë‹¤");
 					}
 				} else {
-					System.out.println("»ï°¢ÇüÀÌ ¾Æ´Õ´Ï´Ù");
+					System.out.println("ì‚¼ê°í˜•ì´ ì•„ë‹™ë‹ˆë‹¤");
 				}
 			} else {
-				System.out.println("»ï°¢ÇüÀÌ ¾Æ´Õ´Ï´Ù");
+				System.out.println("ì‚¼ê°í˜•ì´ ì•„ë‹™ë‹ˆë‹¤");
 			}
 
 		}
 
 		else if (problem == 6) {
-			System.out.printf("1-99 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À >>");
+			System.out.printf("1-99 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >>");
 			int number = scan.nextInt();
 			int first = number / 10;
 			int second = number % 10;
 			if ((first == 3) || (first == 6) || (first == 9)) {
 				if ((second == 3) || (second == 6) || (second == 9)) {
-					System.out.println("¹Ú¼öÂ¦Â¦");
+					System.out.println("ë°•ìˆ˜ì§ì§");
 				} else {
-					System.out.println("¹Ú¼öÂ¦");
+					System.out.println("ë°•ìˆ˜ì§");
 				}
 			} else if ((second == 3) || (second == 6) || (second == 9)) {
-				System.out.println("¹Ú¼öÂ¦");
+				System.out.println("ë°•ìˆ˜ì§");
 			} else {
-				System.out.println("¹Ú¼ö");
+				System.out.println("ë°•ìˆ˜");
 			}
 		}
 
 		else if (problem == 7) {
-			System.out.printf("Á¡ (x,y)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À >>");
+			System.out.printf("ì  (x,y)ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >>");
 			int number1 = scan.nextInt();
 			int number2 = scan.nextInt();
 			if ((number1 >= 100) && (number1 <= 200) && (number2 >= 100) && (number2 <= 200)) {
-				System.out.printf("(%d, %d)»ç°¢Çü ¾È¿¡ ÀÖ½À´Ï´Ù", number1, number2);
+				System.out.printf("(%d, %d)ì‚¬ê°í˜• ì•ˆì— ìˆìŠµë‹ˆë‹¤", number1, number2);
 			} else {
-				System.out.printf("(%d, %d)»ç°¢Çü ¾È¿¡ ¾ø½À´Ï´Ù.", number1, number2);
+				System.out.printf("(%d, %d)ì‚¬ê°í˜• ì•ˆì— ì—†ìŠµë‹ˆë‹¤.", number1, number2);
 			}
 		}
 
 		else if (problem == 8) {
-			System.out.printf("Ã¹¹øÂ° Á¡ (x,y)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À >>");
+			System.out.printf("ì²«ë²ˆì§¸ ì  (x,y)ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >>");
 			int coordinate1_x = scan.nextInt();
 			int coordinate1_y = scan.nextInt();
-			System.out.printf("µÎ¹ø¤Š Á¡ (x,y)ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À >>");
+			System.out.printf("ë‘ë²ˆÂŠ ì  (x,y)ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤ >>");
 			int coordinate2_x = scan.nextInt();
 			int coordinate2_y = scan.nextInt();
 			if (((coordinate1_x < 100 && coordinate2_x < 100) || (coordinate1_x > 200 && coordinate2_x > 200))
 					|| ((coordinate1_y < 100 && coordinate2_y < 100) || (coordinate1_y > 200 && coordinate2_y > 200))) {
-				System.out.println("µÎ »ç°¢ÇüÀÌ Ãæµ¹ÇÏÁö ¾Ê½À´Ï´Ù.");
+				System.out.println("ë‘ ì‚¬ê°í˜•ì´ ì¶©ëŒí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			} else {
-				System.out.println("µÎ »ç°¢ÇüÀÌ Ãæµ¹ÇÕ´Ï´Ù.");
+				System.out.println("ë‘ ì‚¬ê°í˜•ì´ ì¶©ëŒí•©ë‹ˆë‹¤.");
 			}
 		}
 
 		else if (problem == 9) {
-			System.out.printf("¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â >>");
+			System.out.printf("ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ >>");
 			double circle_x = scan.nextDouble();
 			double circle_y = scan.nextDouble();
 			double radius = scan.nextDouble();
-			System.out.printf("Á¡ ÀÔ·Â >>");
+			System.out.printf("ì  ì…ë ¥ >>");
 			double x = scan.nextDouble();
 			double y = scan.nextDouble();
 			double distance = Math.sqrt((x - circle_x) * (x - circle_x) + (y - circle_y) * (y - circle_y));
 			if (distance <= radius) {
-				System.out.printf("Á¡ (%d,%d)´Â ¿ø ¾È¿¡ ÀÖ´Ù", x, y);
+				System.out.printf("ì  (%d,%d)ëŠ” ì› ì•ˆì— ìˆë‹¤", x, y);
 			} else {
-				System.out.printf("Á¡ (%d,%d)´Â ¿ø ¾È¿¡ ¾ø´Ù", x, y);
+				System.out.printf("ì  (%d,%d)ëŠ” ì› ì•ˆì— ì—†ë‹¤", x, y);
 			}
 		} else if (problem == 10) {
-			System.out.printf("Ã¹¹ø¤Š ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â >>");
+			System.out.printf("ì²«ë²ˆÂŠ ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ >>");
 			double x1 = scan.nextDouble();
 			double y1 = scan.nextDouble();
 			double radius1 = scan.nextDouble();
-			System.out.printf("µÎ¹ø¤Š ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â >>");
+			System.out.printf("ë‘ë²ˆÂŠ ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥ >>");
 			double x2 = scan.nextDouble();
 			double y2 = scan.nextDouble();
 			double radius2 = scan.nextDouble();
 			double distance = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
 			if (distance > radius1 + radius2) {
-				System.out.println("µÎ ¿øÀº °ãÄ¡Áö ¾Ê´Â´Ù.");
+				System.out.println("ë‘ ì›ì€ ê²¹ì¹˜ì§€ ì•ŠëŠ”ë‹¤.");
 			} else {
-				System.out.println("µÎ ¿øÀº °ãÄ£´Ù.");
+				System.out.println("ë‘ ì›ì€ ê²¹ì¹œë‹¤.");
 			}
 		}
 
 		else if (problem == 11) {
-			System.out.printf("´ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä(1-12) >>");
+			System.out.printf("ë‹¬ì„ ì…ë ¥í•˜ì„¸ìš”(1-12) >>");
 			int month = scan.nextInt();
 			switch (month) {
 			case 3:
 			case 4:
 			case 5:
-				System.out.println("º½");
+				System.out.println("ë´„");
 				break;
 			case 6:
 			case 7:
 			case 8:
-				System.out.println("¿©¸§");
+				System.out.println("ì—¬ë¦„");
 				break;
 			case 9:
 			case 10:
 			case 11:
-				System.out.println("°¡À»");
+				System.out.println("ê°€ì„");
 				break;
 			default:
-				System.out.println("°Ü¿ï");
+				System.out.println("ê²¨ìš¸");
 				break;
 			}
 		}
 
 		else if (problem == 12) {
-			System.out.printf("¿¬»ê >>");
+			System.out.printf("ì—°ì‚° >>");
 			double number1 = scan.nextDouble();
 			String operator = scan.next();
 			double number2 = scan.nextDouble();
 			
 			DecimalFormat df = new DecimalFormat("#.#####");
 			if (operator.equals("+")) {
-				System.out.printf("%s%s%sÀÇ °è»ê°á°ú´Â %s",df.format(number1),operator,df.format(number2),df.format(number1+number2));
+				System.out.printf("%s%s%sì˜ ê³„ì‚°ê²°ê³¼ëŠ” %s",df.format(number1),operator,df.format(number2),df.format(number1+number2));
 			} else if (operator.equals("-")) {
-				System.out.printf("%s%s%sÀÇ °è»ê°á°ú´Â %s",df.format(number1),operator,df.format(number2),df.format(number1-number2));
+				System.out.printf("%s%s%sì˜ ê³„ì‚°ê²°ê³¼ëŠ” %s",df.format(number1),operator,df.format(number2),df.format(number1-number2));
 
 			} else if (operator.equals("*")) {
-				System.out.printf("%s%s%sÀÇ °è»ê°á°ú´Â %s",df.format(number1),operator,df.format(number2),df.format(number1*number2));
+				System.out.printf("%s%s%sì˜ ê³„ì‚°ê²°ê³¼ëŠ” %s",df.format(number1),operator,df.format(number2),df.format(number1*number2));
 
 			} else if (operator.equals("/")) {
 				if(Float.compare((float) number2, 0)==0) {
-					System.out.println("0À¸·Î ³ª´­¼ö ¾ø½À´Ï´Ù.");
+					System.out.println("0ìœ¼ë¡œ ë‚˜ëˆŒìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 				}
 				else {
-					System.out.printf("%s%s%sÀÇ °è»ê°á°ú´Â %s",df.format(number1),operator,df.format(number2),df.format(number1/number2));
+					System.out.printf("%s%s%sì˜ ê³„ì‚°ê²°ê³¼ëŠ” %s",df.format(number1),operator,df.format(number2),df.format(number1/number2));
 				}
 			}
 		}
 		/*
-		 * DecimalFormat Å¬·¡½º
+		 * DecimalFormat í´ë˜ìŠ¤
 		 * #.##
 		 * ##.##
 		 * ###.##
 		 * ......
-		 * # ## ###Àº Á¤¼öºÎºĞÀ» Å¸³ª³»°í .##Àº ¼Ò¼öºÎºĞÀ» ³ªÅ¸³½´Ù.
-		 * ¿©±â¼­ Á¤¼öºÎºĞÀº #ÀÌ ¸î°³ÀÌµç Á¤¼ö¸¦ ¸ğµÎ ³ªÅ¸³»°Ô µÇÀÖ´Âµ¥ ¼Ò¼öºÎºĞÀº #ÀÇ °³¼ö¸¸Å­ Ç¥½ÃÇÏ°Ô µÈ´Ù.
-		 * ex) 1234.5678 ÀÌ¸é #.####  ##.####  ###.#### ####.####Àº 1234.5678À» ³ªÅ¸³»°Ô µÈ´Ù.
-		 * #.#Àº 1234.5  #.##Àº 1234.56  #.###Àº 1234.567·Î ³ªÅ¸³»°Ô µÈ´Ù.
+		 * # ## ###ì€ ì •ìˆ˜ë¶€ë¶„ì„ íƒ€ë‚˜ë‚´ê³  .##ì€ ì†Œìˆ˜ë¶€ë¶„ì„ ë‚˜íƒ€ë‚¸ë‹¤.
+		 * ì—¬ê¸°ì„œ ì •ìˆ˜ë¶€ë¶„ì€ #ì´ ëª‡ê°œì´ë“  ì •ìˆ˜ë¥¼ ëª¨ë‘ ë‚˜íƒ€ë‚´ê²Œ ë˜ìˆëŠ”ë° ì†Œìˆ˜ë¶€ë¶„ì€ #ì˜ ê°œìˆ˜ë§Œí¼ í‘œì‹œí•˜ê²Œ ëœë‹¤.
+		 * ex) 1234.5678 ì´ë©´ #.####  ##.####  ###.#### ####.####ì€ 1234.5678ì„ ë‚˜íƒ€ë‚´ê²Œ ëœë‹¤.
+		 * #.#ì€ 1234.5  #.##ì€ 1234.56  #.###ì€ 1234.567ë¡œ ë‚˜íƒ€ë‚´ê²Œ ëœë‹¤.
 		 * 0.00
 		 * 00.00
 		 * 000.00
 		 * .....
-		 * 0 00 000Àº Á¤¼ö ºÎºĞ .00Àº ¼Ò¼ö ºÎºĞÀ» ³ªÅ¸³½´Ù.
-		 * À§¿Í ´Ù¸£°Ô 0Àº ºóÀÚ¸®¸¦ 0À¸·Î Ã¤¿ì°Ô µÈ´Ù.
-		 * ex) 1234.5678ÀÌ¸é 00000.0000Àº 01234.5678 0000.00000Àº 1234.56780À¸·Î ³ªÅ¸³»°Ô µÈ´Ù.
+		 * 0 00 000ì€ ì •ìˆ˜ ë¶€ë¶„ .00ì€ ì†Œìˆ˜ ë¶€ë¶„ì„ ë‚˜íƒ€ë‚¸ë‹¤.
+		 * ìœ„ì™€ ë‹¤ë¥´ê²Œ 0ì€ ë¹ˆìë¦¬ë¥¼ 0ìœ¼ë¡œ ì±„ìš°ê²Œ ëœë‹¤.
+		 * ex) 1234.5678ì´ë©´ 00000.0000ì€ 01234.5678 0000.00000ì€ 1234.56780ìœ¼ë¡œ ë‚˜íƒ€ë‚´ê²Œ ëœë‹¤.
 		 */
 
 		scan.close();
