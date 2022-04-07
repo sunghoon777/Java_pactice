@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;DoitJava&apos; to &apos;OpenChallenge&apos;" description="Rename resource &apos;DoitJava&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/DoitJava" name="OpenChallenge" stamp="1649087717950" updateReferences="true"/>
-</session>
