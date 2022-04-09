@@ -141,6 +141,7 @@ public class Practice {
 			System.out.printf("\n평균은 %s", f.format((double) sum / numArray.length));
 		}
 		/*
+		 * 
 		 * 중복없는 램덤 숫자 저장하기
 		 */
 		else if (problem == 8) {
