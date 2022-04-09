@@ -4,42 +4,42 @@ import java.util.Scanner;
 public class OpenChallenge {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("°¡À§¹ÙÀ§º¸ °ÔÀÓÀÔ´Ï´Ù. °¡À§, ¹ÙÀ§, º¸ Áß¿¡¼­ ÀÔ·ÂÇÏ¼¼¿ä");
-		System.out.printf("Ã¶¼ö >> ");
+		System.out.println("ê°€ìœ„ë°”ìœ„ë³´ ê²Œì„ì…ë‹ˆë‹¤. ê°€ìœ„, ë°”ìœ„, ë³´ ì¤‘ì—ì„œ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.printf("ì² ìˆ˜ >> ");
 		String user1 = scan.nextLine();
-		System.out.printf("¿µÈñ >> ");
+		System.out.printf("ì˜í¬ >> ");
 		String user2 = scan.nextLine();
-		if (user1.equals("°¡À§")) {
-			if (user2.equals("°¡À§")) {
-				System.out.println("ºñ°å½À´Ï´Ù");
+		if (user1.equals("ê°€ìœ„")) {
+			if (user2.equals("ê°€ìœ„")) {
+				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤");
 			}
-			if (user2.equals("¹ÙÀ§")) {
-				System.out.println("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù");
+			if (user2.equals("ë°”ìœ„")) {
+				System.out.println("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
 			}
-			if (user2.equals("º¸")) {
-				System.out.println("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù");
-			}
-		}
-		if (user1.equals("¹ÙÀ§")) {
-			if (user2.equals("°¡À§")) {
-				System.out.println("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù");
-			}
-			if (user2.equals("¹ÙÀ§")) {
-				System.out.println("ºñ°å½À´Ï´Ù");
-			}
-			if (user2.equals("º¸")) {
-				System.out.println("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù");
+			if (user2.equals("ë³´")) {
+				System.out.println("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
 			}
 		}
-		if (user1.equals("º¸")) {
-			if (user2.equals("°¡À§")) {
-				System.out.println("¿µÈñ°¡ ÀÌ°å½À´Ï´Ù");
+		if (user1.equals("ë°”ìœ„")) {
+			if (user2.equals("ê°€ìœ„")) {
+				System.out.println("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
 			}
-			if (user2.equals("¹ÙÀ§")) {
-				System.out.println("Ã¶¼ö°¡ ÀÌ°å½À´Ï´Ù");
+			if (user2.equals("ë°”ìœ„")) {
+				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤");
 			}
-			if (user2.equals("º¸")) {
-				System.out.println("ºñ°å½À´Ï´Ù");
+			if (user2.equals("ë³´")) {
+				System.out.println("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
+			}
+		}
+		if (user1.equals("ë³´")) {
+			if (user2.equals("ê°€ìœ„")) {
+				System.out.println("ì˜í¬ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
+			}
+			if (user2.equals("ë°”ìœ„")) {
+				System.out.println("ì² ìˆ˜ê°€ ì´ê²¼ìŠµë‹ˆë‹¤");
+			}
+			if (user2.equals("ë³´")) {
+				System.out.println("ë¹„ê²¼ìŠµë‹ˆë‹¤");
 			}
 		}
 	

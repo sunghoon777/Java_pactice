@@ -10,13 +10,20 @@ public class Practice {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("문제 번호를 입력하시오");
 		int problem = scan.nextInt();
+		/*
+		 * 환전 문제
+		 */
 		if (problem == 1) {
 			float rate = 1100;
 			System.out.printf("원화를 입력하세요(단위 원)>>");
 			int money_won = scan.nextInt();
 			float money_dollor = money_won / rate;
 			System.out.println(money_won + "원은 $" + money_dollor + "입니다");
-		} else if (problem == 2) {
+		}
+		/*
+		 * 자리수 비교 문제
+		 */
+		else if (problem == 2) {
 			System.out.printf("2자리수 정수 입력 >>");
 			int number = scan.nextInt();
 			if (number / 10 == number % 10) {
@@ -24,7 +31,11 @@ public class Practice {
 			} else {
 				System.out.println("no! 10의 자리와 1의 자리가 다릅니다.");
 			}
-		} else if (problem == 3) {
+		}
+		/*
+		 * 거스름돈 문제
+		 */
+		else if (problem == 3) {
 			System.out.printf("금액을 입력하세요 >>");
 			int money = scan.nextInt();
 			int money_left = 0;
@@ -97,7 +108,11 @@ public class Practice {
 			} else {
 				System.out.printf("일원 %d개\n", money);
 			}
-		} else if (problem == 4) {
+		}
+		/*
+		 * 3개의 숫자 중 중간 크기 수 출력 문제
+		 */
+		else if (problem == 4) {
 			System.out.printf("정수 3개 입력 >>");
 			int number1 = scan.nextInt();
 			int number2 = scan.nextInt();
@@ -135,6 +150,9 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 삼각형 판별 문제
+		 */
 		else if (problem == 5) {
 			System.out.printf("정수 3개 입력 >>");
 			int number1 = scan.nextInt();
@@ -157,6 +175,9 @@ public class Practice {
 
 		}
 
+		/*
+		 * 369게임
+		 */
 		else if (problem == 6) {
 			System.out.printf("1-99 사이의 정수를 입력하시오 >>");
 			int number = scan.nextInt();
@@ -175,6 +196,9 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 점이 사각형 안에 있는지에 대한 문제
+		 */
 		else if (problem == 7) {
 			System.out.printf("점 (x,y)의 좌표를 입력하시오 >>");
 			int number1 = scan.nextInt();
@@ -186,6 +210,9 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 두 사각형을 입력받고 충돌하는지 대한 문제
+		 */
 		else if (problem == 8) {
 			System.out.printf("첫번째 점 (x,y)의 좌표를 입력하시오 >>");
 			int coordinate1_x = scan.nextInt();
@@ -201,6 +228,9 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 점이 원안에 있는지에 대한 문제
+		 */
 		else if (problem == 9) {
 			System.out.printf("원의 중심과 반지름 입력 >>");
 			double circle_x = scan.nextDouble();
@@ -215,7 +245,11 @@ public class Practice {
 			} else {
 				System.out.printf("점 (%d,%d)는 원 안에 없다", x, y);
 			}
-		} else if (problem == 10) {
+		}
+		/*
+		 * 두 원을 입력받고 충돌하는지에 대한 문제
+		 */
+		else if (problem == 10) {
 			System.out.printf("첫번 원의 중심과 반지름 입력 >>");
 			double x1 = scan.nextDouble();
 			double y1 = scan.nextDouble();
@@ -232,6 +266,9 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 달을 입력시 계절을 출력해주는 문제
+		 */
 		else if (problem == 11) {
 			System.out.printf("달을 입력하세요(1-12) >>");
 			int month = scan.nextInt();
@@ -257,47 +294,43 @@ public class Practice {
 			}
 		}
 
+		/*
+		 * 계산기 프로그램
+		 */
 		else if (problem == 12) {
 			System.out.printf("연산 >>");
 			double number1 = scan.nextDouble();
 			String operator = scan.next();
 			double number2 = scan.nextDouble();
-			
+
 			DecimalFormat df = new DecimalFormat("#.#####");
 			if (operator.equals("+")) {
-				System.out.printf("%s%s%s의 계산결과는 %s",df.format(number1),operator,df.format(number2),df.format(number1+number2));
+				System.out.printf("%s%s%s의 계산결과는 %s", df.format(number1), operator, df.format(number2),
+						df.format(number1 + number2));
 			} else if (operator.equals("-")) {
-				System.out.printf("%s%s%s의 계산결과는 %s",df.format(number1),operator,df.format(number2),df.format(number1-number2));
+				System.out.printf("%s%s%s의 계산결과는 %s", df.format(number1), operator, df.format(number2),
+						df.format(number1 - number2));
 
 			} else if (operator.equals("*")) {
-				System.out.printf("%s%s%s의 계산결과는 %s",df.format(number1),operator,df.format(number2),df.format(number1*number2));
+				System.out.printf("%s%s%s의 계산결과는 %s", df.format(number1), operator, df.format(number2),
+						df.format(number1 * number2));
 
 			} else if (operator.equals("/")) {
-				if(Float.compare((float) number2, 0)==0) {
+				if (Float.compare((float) number2, 0) == 0) {
 					System.out.println("0으로 나눌수 없습니다.");
-				}
-				else {
-					System.out.printf("%s%s%s의 계산결과는 %s",df.format(number1),operator,df.format(number2),df.format(number1/number2));
+				} else {
+					System.out.printf("%s%s%s의 계산결과는 %s", df.format(number1), operator, df.format(number2),
+							df.format(number1 / number2));
 				}
 			}
 		}
 		/*
-		 * DecimalFormat 클래스
-		 * #.##
-		 * ##.##
-		 * ###.##
-		 * ......
-		 * # ## ###은 정수부분을 타나내고 .##은 소수부분을 나타낸다.
-		 * 여기서 정수부분은 #이 몇개이든 정수를 모두 나타내게 되있는데 소수부분은 #의 개수만큼 표시하게 된다.
-		 * ex) 1234.5678 이면 #.####  ##.####  ###.#### ####.####은 1234.5678을 나타내게 된다.
-		 * #.#은 1234.5  #.##은 1234.56  #.###은 1234.567로 나타내게 된다.
-		 * 0.00
-		 * 00.00
-		 * 000.00
-		 * .....
-		 * 0 00 000은 정수 부분 .00은 소수 부분을 나타낸다.
-		 * 위와 다르게 0은 빈자리를 0으로 채우게 된다.
-		 * ex) 1234.5678이면 00000.0000은 01234.5678 0000.00000은 1234.56780으로 나타내게 된다.
+		 * DecimalFormat 클래스 #.## ##.## ###.## ...... # ## ###은 정수부분을 타나내고 .##은 소수부분을
+		 * 나타낸다. 여기서 정수부분은 #이 몇개이든 정수를 모두 나타내게 되있는데 소수부분은 #의 개수만큼 표시하게 된다. ex) 1234.5678
+		 * 이면 #.#### ##.#### ###.#### ####.####은 1234.5678을 나타내게 된다. #.#은 1234.5 #.##은
+		 * 1234.56 #.###은 1234.567로 나타내게 된다. 0.00 00.00 000.00 ..... 0 00 000은 정수 부분
+		 * .00은 소수 부분을 나타낸다. 위와 다르게 0은 빈자리를 0으로 채우게 된다. ex) 1234.5678이면 00000.0000은
+		 * 01234.5678 0000.00000은 1234.56780으로 나타내게 된다.
 		 */
 
 		scan.close();
