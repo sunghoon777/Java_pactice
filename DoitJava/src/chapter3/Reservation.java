@@ -47,6 +47,7 @@ public class Reservation {
 			}
 			if(isFoolSeat == seatArray[number-1].length) {
 				System.out.println("좌석이 꽉찾습니다.");
+				isFoolSeat = 0;
 				continue;
 			}
 			scan.nextLine();
