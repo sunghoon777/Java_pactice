@@ -136,6 +136,12 @@ public class Main {
 				System.out.println(div.calculate());
 			}
 		}
+		
+		else if(problem == 12) {
+			Reservation reservation = new Reservation();
+			reservation.run();
+			
+		}
 
 	}
 
